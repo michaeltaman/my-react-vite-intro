@@ -1,0 +1,33 @@
+@import '@fortawesome/fontawesome-free/css/all.min.css';
+
+.search-container {
+    position: relative;
+  }
+
+  .search-input {
+    padding-left: 3rem; /* Adjust this value to move the placeholder text */
+  }
+
+  .search-icon {
+    position: absolute;
+    left: 1rem;
+    top: 37%;
+    transform: translateY(-50%);
+  }
+
+  .search-input {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    width: 100%;
+    margin-bottom: 1rem;
+    position: relative;
+    font-size: 20px;
+    font-weight: normal;
+    font-family: "Roboto", sans-serif;
+    color: #333;
+    height: 40px;
+  }
+
+
+
