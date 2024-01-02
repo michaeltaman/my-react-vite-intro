@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Button from '../Button/Button';
 import { differences } from '../../data';
+import '../Button/Button.module.css';
 
 export default function DifferencesSection() {
 
