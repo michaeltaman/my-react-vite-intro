@@ -21,3 +21,10 @@
     background-color: #3e6ae1;
     color: #fff;
 }
+
+@media (max-width: 600px) {
+    .button {
+      padding: 0.4rem 1rem;
+      font-size: 0.8rem;
+    }
+  }

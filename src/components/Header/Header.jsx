@@ -34,7 +34,7 @@ function Header() {
       <HeaderContainer>
         <div style={{ display: 'flex', alignItems: 'center' }}>
           <img src={logo} alt={name} style={{ marginRight: '20px' }} />
-          <h3 style={{paddingTop: '15px'}}>by Michael Trembler</h3>
+          <h3 style={{paddingTop: '15px'}}>by Michael Trembovler</h3>
         </div>
         <span>TIME NOW : {currentTime.toLocaleTimeString()}</span>
       </HeaderContainer>
