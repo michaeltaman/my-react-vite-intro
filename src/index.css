@@ -74,15 +74,14 @@ p {
 }
 
 .button {
-  padding: 2rem 0.1rem 1rem; /* adjust these values as needed */
   margin: 0.1rem; /* adjust this value as needed */
 }
 
 .button-container {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: flex-start; /* align items to the start of the container */
-  width: 60%; /* use the full width of the container */
+  width: 100%; /* use the full width of the container */
 }
 
 
