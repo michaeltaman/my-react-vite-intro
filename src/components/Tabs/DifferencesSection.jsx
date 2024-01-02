@@ -11,13 +11,15 @@ export default function DifferencesSection() {
       setContentType(type);
     }
 
+    const isMobile = window.matchMedia('(max-width: 600px)').matches;
+
     const differenceButtons = Object.keys(differences).map((differenceType) => (
       <Button
         key={differenceType}
         onClick={() => handleClick(differenceType)}
         isActive={contentType === differenceType}
       >
-        {differenceType}
+        {isMobile ? differenceType.split(' ')[0] : differenceType}
       </Button>
     ));
 
