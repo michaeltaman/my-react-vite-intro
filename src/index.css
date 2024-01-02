@@ -73,10 +73,16 @@ p {
   position: relative;
 }
 
+.button {
+  padding: 0.1rem 0.3rem; /* adjust these values as needed */
+  margin: 0.1rem; /* adjust this value as needed */
+}
+
 .button-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: flex-start; /* align items to the start of the container */
+  width: 100%; /* use the full width of the container */
 }
 
 
