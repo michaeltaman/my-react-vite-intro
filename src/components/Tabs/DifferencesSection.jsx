@@ -26,7 +26,9 @@ export default function DifferencesSection() {
     return (
         <section>
         <h3>Differences</h3>
-        {differenceButtons}
+        <div className="button-container">
+          {differenceButtons}
+        </div>
 
         {!contentType && <p>Click on the button to see the difference</p>}
         {contentType && <p>{differences[contentType]}</p>}
