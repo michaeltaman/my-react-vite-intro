@@ -25,6 +25,6 @@ export const differences = {
     'Virtual DOM': 'Virtual DOM enhances performance, speeds up rendering, and ensures efficient updates in web applications.',
     'Bundle Size': 'React\'s smaller bundle size optimizes app performance, accelerating load times and improving overall user experience.\
      You are loading only those you are really required.',
-    'Efficient React':
+    'Efficiency of React':
       'React\'s efficiency translates to faster rendering, boosting app performance and delivering a seamless user experience.',
 }
