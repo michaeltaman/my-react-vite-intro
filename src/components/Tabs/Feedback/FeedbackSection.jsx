@@ -77,7 +77,7 @@ export default function FeedbackSection() {
   const calculateCAPosition = () => {
     const isMobile = window.innerWidth <= 768;
     const isPortrait = window.innerHeight > window.innerWidth;
-    const centerX = isMobile && isPortrait ? window.innerWidth / 2 - 115 : window.innerWidth / 2 - 100;
+    const centerX = isMobile && isPortrait ? window.innerWidth / 2 - 110 : window.innerWidth / 2 - 100;
     const centerY = window.innerHeight / 2;
     return { x: centerX, y: centerY };
   };
