@@ -29,7 +29,7 @@ function StateVsRef() {
 export default function FeedbackSection() {
   const [form, setForm] = useState({
     name: "",
-    hasError: false,
+    hasError: true,
     reason: "help",
   });
   const [showAlert, setShowAlert] = useState(false);
