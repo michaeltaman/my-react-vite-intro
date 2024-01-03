@@ -1,4 +1,4 @@
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import Button from "../../Button/Button";
 import CustomAlert from "../CustomAlert";
 
@@ -58,11 +58,29 @@ export default function FeedbackSection() {
     setForm((prev) => ({ ...prev, hasError: !prev.hasError }));
   }
 
+  //--------------------------For mobile version----------------------------------------------
+  useEffect(() => {
+    const handleResize = () => {
+      const position = calculateCAPosition();
+      // update the element's position...
+      setAlertPosition(position);
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    // Clean up the event listener when the component unmounts
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
 const calculateCAPosition = () => {
-    const centerX = window.innerWidth / 2 - 100;
+    const isMobile = window.innerWidth <= 768;
+    const centerX = isMobile ? window.innerWidth / 2 : window.innerWidth / 2 - 100;
     const centerY = window.innerHeight / 2;
     return { x: centerX, y: centerY };
-};
+  };
+  //---------------------------------------------------------------------------------
 
 const handleButtonClick = (event) => {
     event.preventDefault();
