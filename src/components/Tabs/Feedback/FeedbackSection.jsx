@@ -58,8 +58,8 @@ export default function FeedbackSection() {
     setForm((prev) => ({ ...prev, hasError: !prev.hasError }));
   }
 
-const calculateScreenCenter = () => {
-    const centerX = window.innerWidth / 2;
+const calculateCAPosition = () => {
+    const centerX = window.innerWidth / 2 - 100;
     const centerY = window.innerHeight / 2;
     return { x: centerX, y: centerY };
 };
@@ -68,7 +68,7 @@ const handleButtonClick = (event) => {
     event.preventDefault();
     if (!form.hasError) {
         setShowAlert(true);
-        const center = calculateScreenCenter();
+        const center = calculateCAPosition();
         setAlertPosition(center);
     }
 };
