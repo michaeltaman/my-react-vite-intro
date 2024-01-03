@@ -74,9 +74,10 @@ export default function FeedbackSection() {
     };
   }, []);
 
-const calculateCAPosition = () => {
+  const calculateCAPosition = () => {
     const isMobile = window.innerWidth <= 768;
-    const centerX = isMobile ? window.innerWidth / 2 : window.innerWidth / 2 - 100;
+    const isPortrait = window.innerHeight > window.innerWidth;
+    const centerX = isMobile && isPortrait ? window.innerWidth / 2 - 200 : window.innerWidth / 2 - 100;
     const centerY = window.innerHeight / 2;
     return { x: centerX, y: centerY };
   };
